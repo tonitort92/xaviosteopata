@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #FAF8F5;
+  --background-alt: #F5F0E8;
+  --foreground: #1C1917;
+  --muted: #6B5B4F;
+  --accent: #8B7355;
+  --accent-soft: #C4B5A0;
+  --warm: #E8DFD4;
+  --border: #E8E2DA;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+  .container-narrow {
+    @apply max-w-[1200px] mx-auto px-6 md:px-8;
+  }
+}
+
+@keyframes blob-morph {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+}
+
+.animate-blob {
+  animation: blob-morph 8s ease-in-out infinite;
+}
