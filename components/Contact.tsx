@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section id="contacto" className="section-padding bg-background">
       <div className="container-narrow">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10">
           <div>
             <p className="text-sm uppercase tracking-widest text-muted mb-4">
               Contacto
@@ -42,6 +42,20 @@ export default function Contact() {
                 <p>Martes y jueves: 09:00h – 14:00h · 15:30h – 19:00h</p>
                 <p>Viernes: 09:00h – 15:30h</p>
               </div>
+            </div>
+
+            <div className="rounded-2xl overflow-hidden shadow-elevation-1 h-[240px] sm:h-[280px] lg:min-h-[260px] mt-8">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.0892!2d2.1574!3d41.4969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3192342d78f%3A0x3c3b3b3b3b3b3b3b!2s08291+Ripollet%2C+Barcelona!5e0!3m2!1ses!2ses!4v1710000000000"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Ubicación consulta Xavi Sánchez - C/ Padró 42, Ripollet"
+                className="w-full h-full min-h-[240px]"
+              />
             </div>
           </div>
 
@@ -114,20 +128,6 @@ export default function Contact() {
               </button>
             </form>
           </div>
-        </div>
-
-        <div className="mt-12 rounded-2xl overflow-hidden shadow-elevation-1 aspect-video max-w-4xl">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.0892!2d2.1574!3d41.4969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3192342d78f%3A0x3c3b3b3b3b3b3b3b!2s08291+Ripollet%2C+Barcelona!5e0!3m2!1ses!2ses!4v1710000000000"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Ubicación consulta Xavi Sánchez - C/ Padró 42, Ripollet"
-            className="w-full h-full min-h-[300px]"
-          />
         </div>
       </div>
     </section>
